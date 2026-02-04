@@ -1,23 +1,18 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-int rev (int n){
-    int rev=0;
-    while(n!=0){
-        int k=n%10;
-        rev =  rev *10+k;
-        n=n/10;
-    }
-    return rev;
-}
+
 int main(){
     int n;
     cin>>n;
-    int bn=1;
+    int sum=0;
+    int g=0;
     while(n>0){
-        int k=n%2;
-        bn = bn*10+k;
-        n=n/2;
+        int k=n%10;
+        sum = sum +k *pow(2,g);
+        n=n/10;
+        g++;
     }
-    cout<<rev(bn)/10<<endl;
+    cout <<sum<<endl;
     return 0;
 }
