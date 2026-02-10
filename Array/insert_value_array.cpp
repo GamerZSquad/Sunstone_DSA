@@ -24,5 +24,11 @@ int main() {
     for(int i=0;i<a.size();i++){
         cout<<a[i]<<" ";
     }
+    cout<<endl;
+    int n=5;;
+    vector<int>arr(n,1);
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
