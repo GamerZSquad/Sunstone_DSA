@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-vector<int> convert(int n){
+vector<int>convert(int n){
     vector<int> number;
     while(n!=0){
         int k=n%10;
