@@ -1,13 +1,20 @@
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-            int n=num.size();
-            for (int i=0;i<n-1;i++){
-                for(int j=i+1;j<n;j++){
-                    if (num[i]+num[j]==target){
-                        return {i,j};
-                    }
-                }
-            }
-    }
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n;
+	cin>>n;
+
+	int arr[n] , inv[n];
+	
+	for (int i=0 ;i<n ; i++){
+		cin>>arr[i];
+	}
+	for(int i=0 ; i<n; i++){
+		inv[arr[i]] = i;
+	}
+	for(int i=0;i<n;i++){
+		cout<< inv[i]<<" ";
+	}
+	return 0;
 }
